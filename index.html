@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CopyDuo — Clipboard History Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <a href="#" class="logo">Copy<span>Duo</span></a>
+    <nav id="nav">
+      <a href="#features">Features</a>
+      <a href="#improvements">What's New</a>
+      <a href="#download" class="nav-cta">Download</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Android App
+      </div>
+      <h1 class="hero-title">
+        Your clipboard,<br>
+        <span class="accent">finally organized.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Save and reuse your clipboard history with ease. Fast, private, and completely offline — no cloud, no account, no compromise.
+      </p>
+      <div class="hero-actions">
+        <a href="https://play.google.com/store/apps/details?id=com.anoop.myprojects.copyduo" class="btn-primary">↓ Get on Google Play</a>
+        <a href="#features" class="btn-secondary">See features →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">50</span>
+          <span class="stat-label">Clipboard items</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Cloud uploads</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Offline</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-mockup">
+      <div class="phone-glow"></div>
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="phone-statusbar">
+            <span>9:41</span>
+            <span>▲ ● ■</span>
+          </div>
+          <div class="phone-topbar">
+            <h3>CopyDuo</h3>
+            <p>5 items saved</p>
+          </div>
+          <div class="clip-list">
+            <div class="clip-item active">
+              <div class="clip-text">Meeting at 3pm — don't forget to bring the Q4 report</div>
+              <div class="clip-actions">
+                <div class="clip-btn copy">⊕</div>
+                <div class="clip-btn del">✕</div>
+              </div>
+            </div>
+            <div class="clip-item">
+              <div class="clip-text">npm install @react-navigation/native</div>
+              <div class="clip-actions">
+                <div class="clip-btn copy">⊕</div>
+                <div class="clip-btn del">✕</div>
+              </div>
+            </div>
+            <div class="clip-item">
+              <div class="clip-text">https://github.com/user/project</div>
+              <div class="clip-actions">
+                <div class="clip-btn copy">⊕</div>
+                <div class="clip-btn del">✕</div>
+              </div>
+            </div>
+            <div class="clip-item">
+              <div class="clip-text">Password: ••••••••••••</div>
+              <div class="clip-actions">
+                <div class="clip-btn copy">⊕</div>
+                <div class="clip-btn del">✕</div>
+              </div>
+            </div>
+            <div class="clip-item">
+              <div class="clip-text">Design system tokens exported successfully</div>
+              <div class="clip-actions">
+                <div class="clip-btn copy">⊕</div>
+                <div class="clip-btn del">✕</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRIVACY STRIP -->
+  <div class="privacy-strip">
+    <div class="privacy-inner">
+      <div class="privacy-item"><span>🔒</span><span>No account required</span></div>
+      <div class="privacy-item"><span>📵</span><span>No internet access</span></div>
+      <div class="privacy-item"><span>🛡️</span><span>Stays on your device</span></div>
+      <div class="privacy-item"><span>⚡</span><span>Works instantly</span></div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="features-header reveal">
+        <p class="section-label">Features</p>
+        <h2 class="section-title">Everything you need.<br>Nothing you don't.</h2>
+        <p class="section-subtitle">Built for the way you actually work — quick access to everything you've copied, always within reach.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">📋</div>
+          <h3 class="feature-title">Auto-saves everything</h3>
+          <p class="feature-desc">Every text you copy is automatically captured and stored — no manual action needed.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">📚</div>
+          <h3 class="feature-title">50-item history</h3>
+          <p class="feature-desc">Browse and manage your last 50 clipboard items in a clean, scrollable list.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">One-tap reuse</h3>
+          <p class="feature-desc">Tap any saved item to instantly copy it back to your clipboard. No friction.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-4">
+          <div class="feature-icon">🚫</div>
+          <h3 class="feature-title">No duplicates</h3>
+          <p class="feature-desc">Smart deduplication keeps your history clean — copy the same text twice, stored only once.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-5">
+          <div class="feature-icon">🗑️</div>
+          <h3 class="feature-title">One-tap delete</h3>
+          <p class="feature-desc">Remove items you no longer need with a single tap. Keep your history tidy.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-6">
+          <div class="feature-icon">🔄</div>
+          <h3 class="feature-title">Background service</h3>
+          <p class="feature-desc">Runs reliably in the background, capturing clips even when the app isn't open.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPROVEMENTS -->
+  <section class="improvements-section" id="improvements">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">What's New</p>
+        <h2 class="section-title">Refined to<br>perform better.</h2>
+        <p class="section-subtitle">Under the hood improvements that make CopyDuo faster, more stable, and kinder to your battery.</p>
+      </div>
+      <div class="improvements-grid">
+        <div class="improvement-card reveal reveal-delay-1">
+          <div class="improvement-icon">🚀</div>
+          <h3 class="improvement-title">Optimized Performance</h3>
+          <p class="improvement-desc">Rebuilt scroll architecture for silky smooth list rendering, even with a full clipboard history.</p>
+        </div>
+        <div class="improvement-card reveal reveal-delay-2">
+          <div class="improvement-icon">🤖</div>
+          <h3 class="improvement-title">Android 12+ Stability</h3>
+          <p class="improvement-desc">Full compatibility with the latest Android versions, including foreground service restrictions introduced in Android 12.</p>
+        </div>
+        <div class="improvement-card reveal reveal-delay-3">
+          <div class="improvement-icon">🔋</div>
+          <h3 class="improvement-title">Battery-Friendly</h3>
+          <p class="improvement-desc">Intelligently designed foreground service that monitors the clipboard without draining your battery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / DOWNLOAD -->
+  <section class="cta-section" id="download">
+    <div class="cta-bg-glow"></div>
+    <div class="container" style="position: relative;">
+      <p class="section-label reveal">Download</p>
+      <h2 class="cta-title reveal">Ready to never lose<br>a copied text again?</h2>
+      <p class="cta-subtitle reveal">Free to download. Works offline. No account. No subscription. Just your clipboard, organized.</p>
+      <div class="reveal">
+        <a href="https://play.google.com/store/apps/details?id=com.anoop.myprojects.copyduo" class="btn-play">
+          <div class="btn-play-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.18 23.76c.35.2.74.24 1.1.12l13.9-8.03-3.38-3.38-11.62 11.29zM.5 1.12C.19 1.5 0 2.06 0 2.78v18.44c0 .72.19 1.28.5 1.66l.09.08 10.33-10.33v-.24L.59 1.04l-.09.08zM20.8 10.29l-2.97-1.72-3.7 3.7 3.7 3.7 2.98-1.72c.85-.49.85-1.29 0-1.96zM4.28.12L18.17 8.15 14.8 11.53 3.18.24C3.54.12 3.93.16 4.28.36z"/>
+            </svg>
+          </div>
+          Get it on Google Play
+        </a>
+      </div>
+      <p class="cta-note reveal">Free download · Android 8.0+ · No permissions to read other apps</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#" class="logo">Copy<span>Duo</span></a>
+      <p class="footer-copy">© <span id="year"></span> CopyDuo. Made with care for Android.</p>
+      <a href="privacy.html" class="footer-link">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const nav = document.getElementById('nav');
+    navToggle.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Header border on scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.style.borderBottomColor = window.scrollY > 20
+        ? 'rgba(30, 30, 58, 0.9)'
+        : 'var(--border)';
+    });
+  </script>
+
+</body>
+</html>
