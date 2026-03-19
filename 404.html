@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — CopyDuo</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#0d0d1a">
+  <link rel="canonical" href="https://anooppandikashala.github.io/copyduo.app/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .not-found {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .not-found-inner { max-width: 480px; }
+    .not-found-code {
+      font-family: 'Geist Mono', monospace;
+      font-size: clamp(5rem, 15vw, 8rem);
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 1rem;
+      opacity: 0.15;
+    }
+    .not-found-title {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    .not-found-desc {
+      color: var(--muted);
+      font-size: 0.9375rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <a href="index.html" class="logo">Copy<span>Duo</span></a>
+  </header>
+
+  <div class="not-found">
+    <div class="not-found-inner">
+      <div class="not-found-code">404</div>
+      <h1 class="not-found-title">This page doesn't exist.</h1>
+      <p class="not-found-desc">Looks like this clipboard item was already deleted. Head back to the homepage.</p>
+      <a href="index.html" class="btn-primary">← Back to CopyDuo</a>
+    </div>
+  </div>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.style.borderBottomColor = window.scrollY > 20
+        ? 'rgba(30, 30, 58, 0.9)'
+        : 'var(--border)';
+    });
+  </script>
+</body>
+</html>
