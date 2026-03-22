@@ -507,7 +507,9 @@ section { padding: 6rem 2rem; }
 .improvement-card:hover::after { opacity: 1; }
 
 .improvement-icon {
-  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  color: var(--accent);
   grid-column: 1;
   grid-row: 1;
 }
